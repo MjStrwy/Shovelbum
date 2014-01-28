@@ -14,6 +14,9 @@
                     <param id="2" name="X">20</param>
                     <param id="3" name="Y">20</param>
                 </action>
+                <action behavior="Physics" id="12" name="Set world gravity" sid="1271543787030985" type="dirt">
+                    <param id="0" name="Gravity">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7147475652274608">
@@ -33,20 +36,52 @@
         </event-block>
         <event-block sid="6268439853826371">
             <conditions>
-                <condition id="9" name="Compare acceleration" sid="719037809465311" type="Touch">
-                    <param id="0" name="Axis">0</param>
+                <condition id="8" name="Compare orientation" sid="719037809465311" type="Touch">
+                    <param id="0" name="Orientation">0</param>
                     <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Acceleration">0</param>
+                    <param id="2" name="Angle">0</param>
+                </condition>
+                <condition id="8" name="Compare orientation" sid="5241371736017108" type="Touch">
+                    <param id="0" name="Orientation">1</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Angle">0</param>
+                </condition>
+                <condition id="8" name="Compare orientation" sid="7867264594900234" type="Touch">
+                    <param id="0" name="Orientation">2</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Angle">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-23" name="Move at angle" sid="3819587979267824" type="dirt">
-                    <param id="0" name="Angle">random(0, 360)</param>
-                    <param id="1" name="Distance">10</param>
+                <action behavior="Physics" id="2" name="Apply force at angle" sid="2425764538303411" type="dirt">
+                    <param id="0" name="Force">5</param>
+                    <param id="1" name="Angle">touch.Beta</param>
+                    <param id="2" name="Image point">0</param>
                 </action>
-                <action id="-23" name="Move at angle" sid="5316913197299327" type="lithic">
-                    <param id="0" name="Angle">random(0,360)</param>
-                    <param id="1" name="Distance">5</param>
+                <action behavior="Physics" id="2" name="Apply force at angle" sid="5244936178062501" type="dirt">
+                    <param id="0" name="Force">5</param>
+                    <param id="1" name="Angle">touch.Gamma</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Physics" id="2" name="Apply force at angle" sid="9768561205419904" type="lithic">
+                    <param id="0" name="Force">5</param>
+                    <param id="1" name="Angle">touch.Beta</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Physics" id="2" name="Apply force at angle" sid="1804127794977401" type="lithic">
+                    <param id="0" name="Force">5</param>
+                    <param id="1" name="Angle">touch.Gamma</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3789520747298893">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9953554939158579" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="844609277838428" type="txtBetaDegrees">
+                    <param id="0" name="Text">&quot;Beta: &quot; &amp; touch.Beta</param>
                 </action>
             </actions>
         </event-block>

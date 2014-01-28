@@ -10,13 +10,18 @@
     <unique-id>3k8y8jenijj4j</unique-id>
     <saved-with-version>15802</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
-        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -33,6 +38,7 @@
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Hide address bar">Yes</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
         <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
@@ -68,6 +74,17 @@
         </object-type>
         <object-type name="dirt" sid="6457420069786145">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="2838991890025093">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="5313084112553303">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="3322161245248866">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277628730567304" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -87,6 +104,17 @@
         </object-type>
         <object-type name="lithic" sid="67526267179908">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="432864615222218">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="5278769536306415">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="9214546384098149">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2072525544450959" speed="5">
                     <frame duration="1" hotspotX="0.506494" hotspotY="0.50505" />
@@ -100,6 +128,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="txtBetaDegrees" sid="2819060687270938">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
