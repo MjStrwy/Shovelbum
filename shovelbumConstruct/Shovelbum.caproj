@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>Shovelbum</name>
     <description></description>
     <version>1.0</version>
     <author></author>
@@ -14,6 +14,7 @@
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -48,6 +49,57 @@
         </object-type>
         <object-type name="Audio" sid="432376389717995">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="StandardScreen" sid="1421115561743741">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6110416738968254" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lithics" sid="8881279140229577">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1688787839038878" speed="5">
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.501285" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dirt" sid="6457420069786145">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277628730567304" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.703125" y="0.703125" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.203125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lithic" sid="67526267179908">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2072525544450959" speed="5">
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.50505" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="screenBorder" sid="2240038777200973">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7556016043903699" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
